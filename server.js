@@ -9,3 +9,8 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// starts server 
+app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT + "!");
+})
