@@ -65,7 +65,7 @@ app.post("/api/notes", function (req, res) {
         } else {
             res.json('Error posting note')
         }
-    })
+    });
 
 });
 
@@ -77,7 +77,7 @@ app.get("/api/notes", function (req, res) {
         }
 /*         console.log(data) */
         res.json(JSON.parse(data))
-    })
+    });
 });
 // delete note from db
 app.delete('/api/notes/:id', (req, res) => {
@@ -92,9 +92,9 @@ app.delete('/api/notes/:id', (req, res) => {
         // write db with updated deleted note
         fs.writeFile('./db/db.json', JSON.stringify(updatedNotes, null, 4), (err) => {
             err ? console.log(err) : console.log('Note deleted!')
-        })
+        });
         res.json(`Note with id ${id} deleted`);
-    })
+    });
 });
 // send new data to db
 app.put("/api/notes/:id", function (req, res) {
@@ -112,9 +112,9 @@ app.put("/api/notes/:id", function (req, res) {
                 return error
             }
             res.json(notes)
-        })
-    })
-})
+        });
+    });
+});
 // listen on port 3001
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT + "!");
