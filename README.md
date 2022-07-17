@@ -29,9 +29,6 @@ The application is covered under the following license: <br>
 ## [Usage](#table-of-contents)
 Visit live heroku website.
 
-## [Testing](#table-of-contents)
-N/A
-
 ## [Contributing](#table-of-contents)
 
 Thank you for your interest in contributing to this project, however, I am currently not accepting third party contributions.
@@ -41,7 +38,8 @@ Thank you for your interest in contributing to this project, however, I am curre
 Visit https://note-taker-jess.herokuapp.com/ and click 'Get Started'
 
 ## [Application Preview](#table-of-contents)
-<img src='./public/assets/images/note-taker.gif'>
+Click the image to see the live site.
+<a href="https://note-taker-jess.herokuapp.com/" alt="live site preview"><img src='./public/assets/images/note-taker.gif'></a>
 ## [Questions](#table-of-contents)
 Questions? Please contact me at the following links: <br>
 [GitHub](https://github.com/jessica-calderon) <br>
